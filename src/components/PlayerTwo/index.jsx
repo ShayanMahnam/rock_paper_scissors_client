@@ -32,7 +32,7 @@ const PlayerTwo = ({ result }) => {
     <div className={styles.container}>
       {!player_2 && room.type === "friend" && (
         <JoinLink
-          link={`https://rps-server-wqua.onrender.com/room/${room.roomId}`}
+          link={`https://rps-online-london9.netlify.app/room/${room.roomId}`}
         />
       )}
       {!player_2 && (
