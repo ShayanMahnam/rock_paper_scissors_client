@@ -32,7 +32,7 @@ const PlayerTwo = ({ result }) => {
     <div className={styles.container}>
       {!player_2 && room.type === "friend" && (
         <JoinLink
-          link={`${process.env.REACT_APP_BASE_URL}room/${room.roomId}`}
+          link={`https://rps-server-wqua.onrender.com/room/${room.roomId}`}
         />
       )}
       {!player_2 && (
