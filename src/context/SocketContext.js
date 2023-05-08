@@ -13,7 +13,7 @@ const SocketContextProvider = ({ children }) => {
   const location = useLocation();
 
   useEffect(() => {
-    const socket = io(process.env.REACT_APP_SOCKET_URL);
+    const socket = io("https://rps-server-wqua.onrender.com/");
     setSocket(socket);
 
     socket.on("room:get", (payload) => {
@@ -38,6 +38,7 @@ const SocketContextProvider = ({ children }) => {
       }
       console.log(payload.players);
     });
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (

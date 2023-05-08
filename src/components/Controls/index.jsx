@@ -15,6 +15,7 @@ function Controls() {
     } else {
       setOption("");
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [room]);
 
   const handleChange = ({ currentTarget: input }) => {

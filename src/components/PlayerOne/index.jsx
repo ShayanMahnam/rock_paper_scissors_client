@@ -23,6 +23,7 @@ const PlayerOne = ({ result }) => {
     } else {
       rockHand.current.style.transform = `rotate(${result.rotate}deg)`;
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [result]);
 
   return (

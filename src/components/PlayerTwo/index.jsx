@@ -25,6 +25,7 @@ const PlayerTwo = ({ result }) => {
       if (rockHand.current)
         rockHand.current.style.transform = `rotate(${result.rotate}deg)`;
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [result]);
 
   return (

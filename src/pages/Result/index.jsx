@@ -21,6 +21,7 @@ const Result = () => {
     else if (score === 2) setBoardImg(lose_board_2_img);
     else if (score === 1) setBoardImg(lose_board_1_img);
     else setBoardImg(lose_board_3_img);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   return (
